@@ -19,7 +19,7 @@ include "actions/search_all.php"
 <body>
 <h1>Bienvenido al buscador de discos</h1>
 
-<form action="actions/search_for_cds.php" method="get">
+<form action="verdiscos.php" method="get">
 
     <table border=".5">
         <tr>

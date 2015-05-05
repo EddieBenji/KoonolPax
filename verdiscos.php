@@ -7,6 +7,7 @@
  */
 
 
+include 'actions/search_for_cds.php';
 
 
 ?>
@@ -33,7 +34,16 @@
     </tr>
     </thead>
     <tbody>
-
+    <?php foreach($resultados as $resultado): ?>
+        <tr>
+            <td><?php echo $resultado['nom_d'] ?></td>
+            <td><?php echo $resultado['desc_i'] ?></td>
+            <td><?php echo $resultado['desc_cat'] ?></td>
+            <td><?php echo $resultado['desc_s'] ?></td>
+            <td><?php echo $resultado['precio_d'] ?></td>
+            <td><a href="#">Comprar</a></td>
+        </tr>
+    <?php endforeach ?>
     </tbody>
 </table>
 
