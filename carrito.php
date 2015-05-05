@@ -1,12 +1,17 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: equipo1
+ * User: Lalo
  * Date: 03/05/2015
  * Time: 01:28 PM
  */
-?>
 
+include 'actions/searh_cd_for_buying.php';
+
+
+?>
+<!--A ESTA VISTA LE FALTA, YA QUE CUANDO GUARDE LA RELACIÓN DE COMPRA, DEBERÁ ACTUALIZAR LA BD. (PERO NO
+SE HA HECHO) -->
 <!doctype html>
 <html lang="es">
 <head>
@@ -25,19 +30,13 @@
             <td>Cantidad</td>
             <td>Eliminar</td>
         </tr>
-<!--        <tr>-->
-<!--            <td><input type="text"/></td>-->
-<!--            <td><input type="text"/></td>-->
-<!--            <td><input type="text"/></td>-->
-<!--            <td><input type="text"/></td>-->
-<!--            <td><input type="text"/></td>-->
-<!--        </tr>-->
         <tr>
-            <td><br/></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+
+            <td><input type="text" value = "<?php echo $cd['nom_d'] ?>"/></td>
+            <td><input type="text" value = "<?php echo $cd['desc_i'] ?>"/></td>
+            <td><input type="text" value = "<?php echo $cd['precio_d'] ?>"/></td>
+            <td><input type="text" value = "<?php echo $cd['cant_d'] ?>"/></td>
+            <td><input type="text"/></td>
         </tr>
         <tr>
             <td colspan="5">Total:</td>
