@@ -37,7 +37,6 @@ include 'actions/search_for_cds.php';
 
     <?php foreach ($resultados as $resultado): ?>
         <tr>
-
             <td><?php echo $resultado['nom_d'] ?></td>
             <td><?php echo $resultado['desc_i'] ?></td>
             <td><?php echo $resultado['desc_cat'] ?></td>
