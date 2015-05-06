@@ -16,10 +16,18 @@ $cd_name = $_GET["cd_name"];
 $artist = $_GET["artist"];
 $category = $_GET["category"];
 
-$sentencia_sql = "SELECT disco.*, interprete.*, categoria.desc_cat, sello.desc_s,
+if ($cd_name == 0 || $artist == 0 || $category == 0) {
+    $sentencia_sql = "SELECT disco.*, interprete.*, categoria.desc_cat, sello.desc_s,
  disco.precio_d FROM (disco INNER JOIN sello INNER JOIN categoria INNER JOIN interprete)
- WHERE (disco.cod_d = interprete.cod_i AND disco.cod_s = sello.cod_S) AND  disco.nom_d LIKE '%".$key_word."%'
+ WHERE (disco.cod_d = interprete.cod_i AND disco.cod_s = sello.cod_S) AND  disco.nom_d LIKE '%" . $key_word . "%'";
+} else {
+    $sentencia_sql = "SELECT disco.*, interprete.*, categoria.desc_cat, sello.desc_s,
+ disco.precio_d FROM (disco INNER JOIN sello INNER JOIN categoria INNER JOIN interprete)
+ WHERE (disco.cod_d = interprete.cod_i AND disco.cod_s = sello.cod_S) AND  disco.nom_d LIKE '%" . $key_word . "%'
   AND categoria.cod_cat=$category AND interprete.cod_i=$artist";
+}
+
+
 
 $resultados = ejecutar_query($sentencia_sql);
 

@@ -8,11 +8,15 @@
 
 include 'DB/global.php';
 
-$cd_id =  $_GET['cod_d'];
-$artist_id = $_GET['cod_i'];
+if (isset($_GET['cod_d']) && isset($_GET['cod_i'])) {
+    $cd_id = $_GET['cod_d'];
+    $artist_id = $_GET['cod_i'];
 
- $query = "SELECT disco.*, interprete.* FROM (disco INNER JOIN interprete)
+    $query = "SELECT disco.*, interprete.* FROM (disco INNER JOIN interprete)
  WHERE (disco.cod_d = interprete.cod_i) AND disco.cod_d =$cd_id AND interprete.cod_i=$artist_id";
 
-$row = ejecutar_query($query);
-$cd = $row->fetch_assoc();
+    $row = ejecutar_query($query);
+    $cd = $row->fetch_assoc();
+}else{
+    header('location: buscador.php');
+}

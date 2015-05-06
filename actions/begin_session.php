@@ -14,7 +14,9 @@ session_start();
 
 $nick_user = $_POST["user_name"];
 $password_user = $_POST["user_password"];
-$nick_user = "romario";
+
+
+
 $sentencia_sql = "SELECT * FROM usuario where nick_u='$nick_user'";
 $usuario = ejecutar_query($sentencia_sql);
 
