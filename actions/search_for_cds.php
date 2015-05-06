@@ -27,7 +27,8 @@ if ($cd_name == 0 || $artist == 0 || $category == 0) {
   AND categoria.cod_cat=$category AND interprete.cod_i=$artist";
 }
 
-
+echo $sentencia_sql;
+//exit;
 
 $resultados = ejecutar_query($sentencia_sql);
 
