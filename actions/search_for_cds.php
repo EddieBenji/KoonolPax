@@ -21,6 +21,5 @@ $sentencia_sql = "SELECT disco.*, interprete.*, categoria.desc_cat, sello.desc_s
  WHERE (disco.cod_d = interprete.cod_i AND disco.cod_s = sello.cod_S) AND  disco.nom_d LIKE '%".$key_word."%'
   AND categoria.cod_cat=$category AND interprete.cod_i=$artist";
 
-
 $resultados = ejecutar_query($sentencia_sql);
 

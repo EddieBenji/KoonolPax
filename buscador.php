@@ -25,7 +25,7 @@ include "actions/search_all.php"
         <tr>
             <td>Por palabra clave:</td>
             <td>
-                <label><input type="text" name="key_word" required/></label>
+                <label><input type="text" name="key_word"/></label>
             </td>
         </tr>
         <tr>

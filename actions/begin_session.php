@@ -14,8 +14,8 @@ session_start();
 
 $nick_user = $_POST["user_name"];
 $password_user = $_POST["user_password"];
-
-$sentencia_sql = "SELECT * FROM koonolpax.usuario where nick_u='$nick_user'";
+$nick_user = "romario";
+$sentencia_sql = "SELECT * FROM usuario where nick_u='$nick_user'";
 $usuario = ejecutar_query($sentencia_sql);
 
 if ($usuario->num_rows > 0) {

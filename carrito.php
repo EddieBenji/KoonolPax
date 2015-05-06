@@ -20,7 +20,7 @@ SE HA HECHO) -->
 </head>
 <body>
 
-<form action="">
+<form action="actions/end_shopping.php" method="post">
     <table border="1" cellpadding="2" cellspacing="2">
         <thead>
         <tr>
@@ -30,12 +30,11 @@ SE HA HECHO) -->
             <td>Cantidad</td>
             <td>Eliminar</td>
         </tr>
-        <tr>
-
-            <td><input type="text" value = "<?php echo $cd['nom_d'] ?>"/></td>
-            <td><input type="text" value = "<?php echo $cd['desc_i'] ?>"/></td>
-            <td><input type="text" value = "<?php echo $cd['precio_d'] ?>"/></td>
-            <td><input type="text" value = "<?php echo $cd['cant_d'] ?>"/></td>
+        <tr><input type="hidden" name="disc_id" value="<?php echo $cd['cod_d'] ?>"/>
+            <td><input type="text" value="<?php echo $cd['nom_d'] ?>"/></td>
+            <td><input type="text" value="<?php echo $cd['desc_i'] ?>"/></td>
+            <td><input type="text" value="<?php echo $cd['precio_d'] ?>"/></td>
+            <td><input type="text" name="disc_qty" value="<?php echo $cd['cant_d'] ?>"/></td>
             <td><input type="text"/></td>
         </tr>
         <tr>
@@ -48,7 +47,7 @@ SE HA HECHO) -->
         </tr>
         <tr>
             <td colspan="5">
-                <a href="#">Terminar Pedido</a>
+                <input type="submit" value="Terminar pedido"/>
             </td>
         </tr>
         </thead>
