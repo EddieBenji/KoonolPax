@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.4
+-- version 4.4.6
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: May 05, 2015 at 08:38 PM
--- Server version: 10.0.17-MariaDB-log
--- PHP Version: 5.6.8
+-- Servidor: localhost
+-- Tiempo de generación: 12-05-2015 a las 21:14:39
+-- Versión del servidor: 10.0.18-MariaDB-log
+-- Versión de PHP: 5.6.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `KoonolPax`
+-- Base de datos: `KoonolPax`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categoria`
+-- Estructura de tabla para la tabla `categoria`
 --
 
 CREATE TABLE IF NOT EXISTS `categoria` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `categoria` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `disco`
+-- Estructura de tabla para la tabla `disco`
 --
 
 CREATE TABLE IF NOT EXISTS `disco` (
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `disco` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `interprete`
+-- Estructura de tabla para la tabla `interprete`
 --
 
 CREATE TABLE IF NOT EXISTS `interprete` (
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `interprete` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pedido_d`
+-- Estructura de tabla para la tabla `pedido_d`
 --
 
 CREATE TABLE IF NOT EXISTS `pedido_d` (
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `pedido_d` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pedido_m`
+-- Estructura de tabla para la tabla `pedido_m`
 --
 
 CREATE TABLE IF NOT EXISTS `pedido_m` (
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `pedido_m` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sello`
+-- Estructura de tabla para la tabla `sello`
 --
 
 CREATE TABLE IF NOT EXISTS `sello` (
@@ -98,27 +98,28 @@ CREATE TABLE IF NOT EXISTS `sello` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE IF NOT EXISTS `usuario` (
   `cod_u` int(6) NOT NULL,
   `nick_u` varchar(80) NOT NULL,
-  `pass_u` varchar(80) NOT NULL
+  `pass_u` varchar(80) NOT NULL,
+  `admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `categoria`
+-- Indices de la tabla `categoria`
 --
 ALTER TABLE `categoria`
   ADD PRIMARY KEY (`cod_cat`);
 
 --
--- Indexes for table `disco`
+-- Indices de la tabla `disco`
 --
 ALTER TABLE `disco`
   ADD PRIMARY KEY (`cod_d`),
@@ -127,72 +128,72 @@ ALTER TABLE `disco`
   ADD KEY `fk_disco_categoria1_idx` (`cod_cat`);
 
 --
--- Indexes for table `interprete`
+-- Indices de la tabla `interprete`
 --
 ALTER TABLE `interprete`
   ADD PRIMARY KEY (`cod_i`);
 
 --
--- Indexes for table `pedido_d`
+-- Indices de la tabla `pedido_d`
 --
 ALTER TABLE `pedido_d`
   ADD KEY `fk_table1_pedidos_m1_idx` (`cod_p`),
   ADD KEY `fk_pedido_d_disco1_idx` (`cod_d`);
 
 --
--- Indexes for table `pedido_m`
+-- Indices de la tabla `pedido_m`
 --
 ALTER TABLE `pedido_m`
   ADD PRIMARY KEY (`cod_p`),
   ADD KEY `fk_pedidos_m_usuario1_idx` (`cod_u`);
 
 --
--- Indexes for table `sello`
+-- Indices de la tabla `sello`
 --
 ALTER TABLE `sello`
   ADD PRIMARY KEY (`cod_s`);
 
 --
--- Indexes for table `usuario`
+-- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`cod_u`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `categoria`
+-- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
   MODIFY `cod_cat` smallint(3) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `disco`
+-- AUTO_INCREMENT de la tabla `disco`
 --
 ALTER TABLE `disco`
   MODIFY `cod_d` int(6) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `interprete`
+-- AUTO_INCREMENT de la tabla `interprete`
 --
 ALTER TABLE `interprete`
   MODIFY `cod_i` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `pedido_m`
+-- AUTO_INCREMENT de la tabla `pedido_m`
 --
 ALTER TABLE `pedido_m`
   MODIFY `cod_p` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `sello`
+-- AUTO_INCREMENT de la tabla `sello`
 --
 ALTER TABLE `sello`
   MODIFY `cod_s` smallint(3) NOT NULL AUTO_INCREMENT;
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `disco`
+-- Filtros para la tabla `disco`
 --
 ALTER TABLE `disco`
   ADD CONSTRAINT `fk_disco_categoria` FOREIGN KEY (`cod_cat`) REFERENCES `categoria` (`cod_cat`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -200,7 +201,7 @@ ALTER TABLE `disco`
   ADD CONSTRAINT `fk_disco_sello` FOREIGN KEY (`cod_s`) REFERENCES `sello` (`cod_s`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `pedido_d`
+-- Filtros para la tabla `pedido_d`
 --
 ALTER TABLE `pedido_d`
   ADD CONSTRAINT `fk_pedidos_m` FOREIGN KEY (`cod_p`) REFERENCES `pedido_m` (`cod_p`) ON DELETE NO ACTION ON UPDATE NO ACTION;
