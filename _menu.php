@@ -32,6 +32,17 @@
     </tr>
     <tr>
         <td>
+            <a href="altainterprete.php">Intérprete</a>
+        </td>
+        <td>
+            <a href="#">Intérprete</a>
+        </td>
+        <td>
+            <a href="#">Intérprete</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href="altacategoria.php">Categorías</a>
         </td>
         <td>

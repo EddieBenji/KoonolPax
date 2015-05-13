@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: USER
  * Date: 13/05/2015
- * Time: 08:35 AM
+ * Time: 08:56 AM
  */
 ?>
 
@@ -11,18 +11,18 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Alta Categoría</title>
+    <title>Alta Intérprete</title>
 </head>
 <body>
 
 <center>
-<?php include "_menu.php" ?>
+    <?php include "_menu.php" ?>
 </center>
 <br/>
 <center>
-    <form action="actions/alta_categoria.php" method="post">
-        <label for="nombre_categoria">Nombre de la Categoría</label>
-        <input type="text" name="nombre_categoria"/>
+    <form action="actions/alta_interprete.php" method="post">
+        <label for="nombre_interprete">Nombre del Intérprete</label>
+        <input type="text" name="nombre_interprete"/>
         <br/><br/>
         <input type="submit" value="Dar Alta" required/>
     </form>
