@@ -32,7 +32,7 @@
     </tr>
     <tr>
         <td>
-            <a href="#">Categorías</a>
+            <a href="altacategoria.php">Categorías</a>
         </td>
         <td>
             <a href="#">Categorías</a>
@@ -46,7 +46,7 @@
             <a href="altasello.php">Sellos</a>
         </td>
         <td>
-            <a href="#">Sellos</a>
+            <a href="">Sellos</a>
         </td>
         <td>
             <a href="#">Sellos</a>
