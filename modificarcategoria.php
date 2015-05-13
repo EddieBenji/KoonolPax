@@ -14,7 +14,7 @@ include 'actions/search_all_categorias.php'
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Baja Categoría</title>
+    <title>Modificar Categoría</title>
 </head>
 <body>
 

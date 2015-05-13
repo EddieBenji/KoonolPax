@@ -38,7 +38,7 @@
             <a href="bajainterprete.php">Intérprete</a>
         </td>
         <td>
-            <a href="#">Intérprete</a>
+            <a href="modificarinterprete.php">Intérprete</a>
         </td>
     </tr>
     <tr>
@@ -60,7 +60,7 @@
             <a href="bajasello.php">Sellos</a>
         </td>
         <td>
-            <a href="#">Sellos</a>
+            <a href="modificarsello.php">Sellos</a>
         </td>
     </tr>
     </tbody>
