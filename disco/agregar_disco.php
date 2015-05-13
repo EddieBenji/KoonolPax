@@ -16,7 +16,7 @@
 <body>
 
 <center>
-    <?php include "_menu.php" ?>
+    <?php include "../_menu.php" ?>
 </center>
 <br/>
 <center>
