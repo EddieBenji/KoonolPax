@@ -27,7 +27,7 @@ if ($usuario->num_rows > 0) {
     $_SESSION["admin"] = $row["admin"];
 
     //Redirigimos a index:
-    header('location: ../index.html');
+    header('location: ../index.php');
 } else {
     echo "No hay usuarios con ese nombre";
 

@@ -48,6 +48,6 @@ include 'actions/search_for_cds.php';
     </tbody>
 </table>
 
-<a href="index.html">Ir a inicio</a>
+<a href="index.php">Ir a inicio</a>
 </body>
 </html>

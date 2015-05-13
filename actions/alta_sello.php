@@ -15,4 +15,4 @@ $sentencia_sql = "INSERT INTO `koonolpax`.`sello` (`desc_s`) VALUES ('$nombre_se
 
 ejecutar_query($sentencia_sql);
 
-header('location: ../index.html');
+header('location: ../index.php');
