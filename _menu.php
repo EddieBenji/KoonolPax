@@ -46,7 +46,7 @@
             <a href="altacategoria.php">Categorías</a>
         </td>
         <td>
-            <a href="#">Categorías</a>
+            <a href="bajacategoria.php">Categorías</a>
         </td>
         <td>
             <a href="#">Categorías</a>
