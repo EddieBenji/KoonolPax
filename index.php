@@ -43,6 +43,7 @@ session_start();
     <div id="menu">
         <ul id="menu_principal">
             <li><a href='login.php'>Ver Carrito</a></li>
+            <li><a href="menu.php">Administrador</a></li>
         </ul>
         <?php if(isset($_SESSION["admin"])  && $_SESSION["admin"] == 1) {?>
         <center><a href="menu.php">Administrador</a></center>

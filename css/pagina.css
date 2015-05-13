@@ -80,6 +80,7 @@ img {
 #menu ul#menu_principal li {
     display: inline;
     float: left;
+    padding: 10px 300px 10px 10px;
 }
 
 #menu #salir {
