@@ -1,9 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<?php
+/**
+ * Created by PhpStorm.
+ * User: User
+ * Date: 13/05/2015
+ * Time: 12:16 PM
+ */
 
+session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/pagina.css" title="style">
     <title>Koonol Paax</title>
 </head>
@@ -35,6 +45,9 @@
             <li><a href='login.php'>Ver Carrito</a></li>
             <li><a href="menu.php">Administrador</a></li>
         </ul>
+        <?php if(isset($_SESSION["admin"])  && $_SESSION["admin"] == 1) {?>
+        <center><a href="menu.php">Administrador</a></center>
+        <?php } ?>
         <div class="clear"></div>
     </div>
 

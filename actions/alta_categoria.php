@@ -9,9 +9,9 @@
 //incluye el dao con la información de la BD:
 include 'DB/global.php';
 
-$nombre_sello = $_POST["nombre_sello"];
+$nombre_categoria = $_POST["nombre_categoria"];
 
-$sentencia_sql = "INSERT INTO `koonolpax`.`sello` (`desc_s`) VALUES ('$nombre_sello')";
+$sentencia_sql = "INSERT INTO `koonolpax`.`categoria` (`desc_cat`) VALUES ('$nombre_categoria')";
 
 ejecutar_query($sentencia_sql);
 

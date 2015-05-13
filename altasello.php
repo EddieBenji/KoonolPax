@@ -12,14 +12,14 @@
 <br/>
 <center>
 <form action="actions/alta_sello.php" method="post">
-    <label for="nombre_sello">Nombre</label>
+    <label for="nombre_sello">Nombre del Sello</label>
     <input type="text" name="nombre_sello"/>
     <br/><br/>
     <input type="submit" value="Dar Alta" required/>
 </form>
 </center>
 
-<a href="index.html">Ir a Inicio</a>
+<a href="index.php">Ir a Inicio</a>
 
 </body>
 </html>

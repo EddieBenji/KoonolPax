@@ -5,8 +5,9 @@
     <title>Menu</title>
 </head>
 <body>
-<center>
+    <center>
     <?php include "_menu.php" ?>
-</center>
+    </center>
+
 </body>
 </html>

@@ -1,17 +1,14 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Lalo
- * Date: 03/05/2015
- * Time: 01:50 PM
+ * User: romarinpc
+ * Date: 5/13/15
+ * Time: 8:59 AM
  */
 
-
-include 'actions/search_for_cds.php';
-
+include 'actions/disco/buscar_todo_disco.php';
 
 ?>
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -31,6 +28,7 @@ include 'actions/search_for_cds.php';
         <td>Sello</td>
         <td>Precio</td>
         <td>Comprar</td>
+        <td>Operaciones</td>
     </tr>
     </thead>
     <tbody>
@@ -42,12 +40,13 @@ include 'actions/search_for_cds.php';
             <td><?php echo $resultado['desc_cat'] ?></td>
             <td><?php echo $resultado['desc_s'] ?></td>
             <td><?php echo $resultado['precio_d'] ?></td>
-            <td><a href="carrito.php?cod_d=<?php echo $resultado['cod_d'] ?>&cod_i=<?php echo $resultado['cod_i'] ?>">Comprar</a></td>
+            <td><a href="../carrito.php?cod_d=<?php echo $resultado['cod_d'] ?>&cod_i=<?php echo $resultado['cod_i'] ?>">Comprar</a></td>
+            <td><a href="../actions/disco/eliminar_disco.php?id=<?php echo $resultado['cod_d'] ?>">Eliminar</a></td>
         </tr>
     <?php endforeach ?>
     </tbody>
 </table>
 
-<a href="index.php">Ir a inicio</a>
+<a href="../index.html">Ir a inicio</a>
 </body>
 </html>
