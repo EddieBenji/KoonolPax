@@ -24,6 +24,7 @@ if ($usuario->num_rows > 0) {
     $_SESSION["cod_u"] = $row["cod_u"];
     $_SESSION["nick_u"] = $row["nick_u"];
     $_SESSION["pass_u"] = $row["pass_u"];
+    $_SESSION["admin"] = $row["admin"];
 
     //Redirigimos a index:
     header('location: ../index.html');
