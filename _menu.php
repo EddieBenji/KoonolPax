@@ -35,7 +35,7 @@
             <a href="altainterprete.php">Intérprete</a>
         </td>
         <td>
-            <a href="#">Intérprete</a>
+            <a href="bajainterprete.php">Intérprete</a>
         </td>
         <td>
             <a href="#">Intérprete</a>
