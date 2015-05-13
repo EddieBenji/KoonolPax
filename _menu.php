@@ -57,7 +57,7 @@
             <a href="altasello.php">Sellos</a>
         </td>
         <td>
-            <a href="">Sellos</a>
+            <a href="bajasello.php">Sellos</a>
         </td>
         <td>
             <a href="#">Sellos</a>
