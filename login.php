@@ -38,7 +38,7 @@ if (isset($_SESSION["cod_u"])) {
         <button>LOGIN</button>
     </form>
     <br/><br/>
-    <a href="index.html">Ir a inicio</a>
+    <a href="index.php">Ir a inicio</a>
 
 <?php
 } ?>

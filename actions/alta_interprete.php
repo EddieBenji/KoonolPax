@@ -2,16 +2,16 @@
 /**
  * Created by PhpStorm.
  * User: USER
- * Date: 12/05/2015
- * Time: 03:41 PM
+ * Date: 13/05/2015
+ * Time: 08:58 AM
  */
 
 //incluye el dao con la información de la BD:
 include 'DB/global.php';
 
-$nombre_sello = $_POST["nombre_sello"];
+$nombre_interprete = $_POST["nombre_interprete"];
 
-$sentencia_sql = "INSERT INTO `koonolpax`.`sello` (`desc_s`) VALUES ('$nombre_sello')";
+$sentencia_sql = "INSERT INTO `koonolpax`.`interprete` (`desc_i`) VALUES ('$nombre_interprete')";
 
 ejecutar_query($sentencia_sql);
 

@@ -24,5 +24,5 @@ $queryPedidoD = "INSERT INTO pedido_d(cod_p, cod_d, cant_d) VALUES($ped_id, $dis
 ejecutar_query($queryPedidoD);
 
 
-header('location: ../index.html');
+header('location: ../index.php');
 
