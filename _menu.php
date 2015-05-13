@@ -49,7 +49,7 @@
             <a href="bajacategoria.php">Categorías</a>
         </td>
         <td>
-            <a href="#">Categorías</a>
+            <a href="modificarcategoria.php">Categorías</a>
         </td>
     </tr>
     <tr>
