@@ -45,7 +45,7 @@
         <input type="date" name="fecha"/>
         <br/>
 
-        <label for="categoria">Precio</label>
+        <label for="categoria">Categoría</label>
         <input type="number" name="categoria" min="0"/>
         <br/>
 

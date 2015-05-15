@@ -8,7 +8,7 @@
 
 include 'DB/global.php';
 
-$delete_query = "DELETE FROM `koonolpax`.`sello` WHERE `sello`.`cod_s` =";
+$delete_query = "DELETE FROM sello WHERE cod_s =";
 
 if(!empty($_POST['options'])) {
     $options = $_POST['options'];

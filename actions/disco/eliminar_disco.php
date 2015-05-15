@@ -1,21 +1,21 @@
 <?php
-include 'DB/global.php';
+include '../DB/global.php';
 
 
 session_start();
 
 
-if(isset($_SESSION['u_admin'])){
+if (isset($_SESSION['admin'])) {
 
-$id_disco = $_POST['id_disco'];
-
-
-
-$query = "DELETE FROM disco WHERE cod_d=$id_disco)";
+    $id_disco = $_GET['id_disco'];
 
 
-ejecutar_query($query);
+    $query = "DELETE FROM disco WHERE (cod_d=$id_disco)";
 
-}else {
-	header('location: ../index.html');
+
+
+
+    ejecutar_query($query);
+
 }
+header('location: ../../verdiscos.php');
