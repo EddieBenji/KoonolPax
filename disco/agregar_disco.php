@@ -5,6 +5,8 @@
  * Date: 5/13/15
  * Time: 9:00 AM
  */
+include '../actions/search_all.php'
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +28,11 @@
         <br/>
 
         <label for="interprete">Interprete</label>
-        <input type="number" name="interprete"/>
+        <select name="artist" id="artist" title="artist">
+            <?php foreach ($artistas as $artista): ?>
+                <option value="<?php echo $artista["cod_i"]; ?>"><?php echo $artista["desc_i"]; ?></option>
+            <?php endforeach ?>
+        </select>
         <br/>
 
         <label for="cantidad">Cantidad</label>
@@ -46,7 +52,12 @@
         <br/>
 
         <label for="categoria">Categoría</label>
-        <input type="number" name="categoria" min="0"/>
+        <select name="category" id="category" title="category">
+            <option value="0">Todas las categorías</option>
+            <?php foreach ($categorias as $categoria): ?>
+                <option value="<?php echo $categoria["cod_cat"]; ?>"><?php echo $categoria["desc_cat"]; ?></option>
+            <?php endforeach ?>
+        </select>
         <br/>
 
         <input type="submit" value="Guardar Disco" required/>
