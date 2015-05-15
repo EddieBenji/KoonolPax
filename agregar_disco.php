@@ -5,7 +5,7 @@
  * Date: 5/13/15
  * Time: 9:00 AM
  */
-include '../actions/search_all.php'
+include 'actions/search_all.php';
 
 ?>
 
@@ -18,11 +18,11 @@ include '../actions/search_all.php'
 <body>
 
 <center>
-    <?php include "../_menu.php" ?>
+    <?php include "_menu.php" ?>
 </center>
 <br/>
 <center>
-    <form action="../actions/disco/alta-disco.php" method="post">
+    <form action="actions/disco/alta-disco.php" method="post">
         <label for="nombre">Nombre del Disco</label>
         <input type="text" name="nombre"/>
         <br/>
@@ -40,7 +40,11 @@ include '../actions/search_all.php'
         <br/>
 
         <label for="sello">Sello</label>
-        <input type="number" name="sello" min="0"/>
+        <select name="sello" id="sello" title="sello">
+            <?php foreach ($sellos as $sello): ?>
+                <option value="<?php echo $sello["cod_s"]; ?>"><?php echo $sello["desc_s"]; ?></option>
+            <?php endforeach ?>
+        </select>
         <br/>
 
         <label for="precio">Precio</label>
@@ -53,7 +57,6 @@ include '../actions/search_all.php'
 
         <label for="categoria">Categoría</label>
         <select name="category" id="category" title="category">
-            <option value="0">Todas las categorías</option>
             <?php foreach ($categorias as $categoria): ?>
                 <option value="<?php echo $categoria["cod_cat"]; ?>"><?php echo $categoria["desc_cat"]; ?></option>
             <?php endforeach ?>
@@ -64,7 +67,7 @@ include '../actions/search_all.php'
     </form>
 </center>
 
-<a href="../index.html">Ir a Inicio</a>
+<a href="index.php">Ir a Inicio</a>
 
 </body>
 </html>
