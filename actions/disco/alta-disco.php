@@ -1,5 +1,5 @@
 <?php
-include 'DB/global.php';
+include '../DB/global.php';
 
 
 session_start();
