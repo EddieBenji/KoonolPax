@@ -18,7 +18,7 @@
     <tbody>
     <tr>
         <td>
-            <a href="disco/agregar_disco.php">Discos</a>
+            <a href="agregar_disco.php">Discos</a>
         </td>
         <td>
             <a href="disco/baja_disco.php">Discos</a>
