@@ -61,9 +61,11 @@ session_start();
 
             <p><a href="buscador.php?modo=n">Novedades</a></p>
 
-            <p><a href="buscador.php?modo=b">Los más vendidos</a></p>
+            <p><a href="buscador.php?modo=b">Los mï¿½s vendidos</a></p>
 
-            <p><a href="buscador.php?modo=i">Los artistas más vendidos</a></p>
+            <p><a href="buscador.php?modo=i">Los artistas mï¿½s vendidos</a></p>
+
+            <p><a href="ver_usuarios_activos.php">Los usuarios mÃ¡s vendidos</a></p>
 
             <h3><a href="#">Enlaces relacionados</a></h3>
 
@@ -74,7 +76,7 @@ session_start();
         <div id="publicidad">
             <h2>Publicidad</h2>
 
-            <p>No olvide dejar de revisar la últimas ediciones de discos en nuestra página.</p>
+            <p>No olvide dejar de revisar la ï¿½ltimas ediciones de discos en nuestra pï¿½gina.</p>
 
             <p><a href="#">Seguir leyendo...</a></p>
         </div>
@@ -93,9 +95,9 @@ session_start();
 
                 <img src="imagenes/sara.jpg" alt="Imagen gen?rica"/>
 
-                <p>Sarah Brightman es una soprano, actriz y bailarina británica que interpreta música del género
-                    denominado Classical Crossover. Ha cantado en inglés, español, francés, catalán, latín, alemán,
-                    italiano, japonés, hindi, mandarín, ruso y occitano.</p>
+                <p>Sarah Brightman es una soprano, actriz y bailarina britï¿½nica que interpreta mï¿½sica del gï¿½nero
+                    denominado Classical Crossover. Ha cantado en inglï¿½s, espaï¿½ol, francï¿½s, catalï¿½n, latï¿½n, alemï¿½n,
+                    italiano, japonï¿½s, hindi, mandarï¿½n, ruso y occitano.</p>
 
                 <p>Interprete: SARAH BRIGHTMAN</p>
 
@@ -110,10 +112,10 @@ session_start();
 
                 <img src="imagenes/alize.jpg" alt="Imagen gen?rica"/>
 
-                <p>Alizée Jacotey, conocida mundialmente como Alizée, es una cantante francesa nacida en Ajaccio,
-                    Córcega. Su nombre se refiere a la forma femenina de los vientos alisios.</p>
+                <p>Alizï¿½e Jacotey, conocida mundialmente como Alizï¿½e, es una cantante francesa nacida en Ajaccio,
+                    Cï¿½rcega. Su nombre se refiere a la forma femenina de los vientos alisios.</p>
 
-                <p>Actualmente se encuentra promocionando su quinto álbum de estudio, titulado 5, que salió a la venta
+                <p>Actualmente se encuentra promocionando su quinto ï¿½lbum de estudio, titulado 5, que saliï¿½ a la venta
                     el 25 de marzo de 2013. Del cual se desprende su primer sencillo llamado A cause de l'automne..</p>
 
                 <p></p>

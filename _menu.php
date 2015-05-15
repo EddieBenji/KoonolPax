@@ -24,7 +24,7 @@
             <a href="disco/baja_disco.php">Discos</a>
         </td>
         <td>
-            <a href="#">Discos</a>
+            <a href="modificardisco.php">Discos</a>
         </td>
         <td>
             <a href="#">Usuarios mas activos</a>
