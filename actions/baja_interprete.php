@@ -7,14 +7,16 @@
  */
 include 'DB/global.php';
 
-$delete_query = "DELETE FROM `koonolpax`.`interprete` WHERE `interprete`.`cod_i` =";
+$delete_query = "DELETE FROM interprete WHERE cod_i =";
 
-if(!empty($_POST['options'])) {
+if (!empty($_POST['options'])) {
     $options = $_POST['options'];
 
-    foreach ($options as $selected){
-        ejecutar_query($delete_query.$selected);
+    foreach ($options as $selected) {
+        ejecutar_query($delete_query . $selected);
+
     }
+
 }
 
 header('location: ../index.php');

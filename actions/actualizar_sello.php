@@ -12,7 +12,7 @@ include 'DB/global.php';
 $id_sello = $_POST["id_sello"];
 $nombre_sello = $_POST["nombre_sello"];
 
-$sentencia_sql = "UPDATE `koonolpax`.`sello` SET `desc_s` = '$nombre_sello' WHERE `sello`.`cod_s` = $id_sello";
+$sentencia_sql = "UPDATE sello SET desc_s = '$nombre_sello' WHERE cod_s = $id_sello";
 
 ejecutar_query($sentencia_sql);
 

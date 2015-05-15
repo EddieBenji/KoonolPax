@@ -11,7 +11,7 @@ include 'DB/global.php';
 
 $nombre_categoria = $_POST["nombre_categoria"];
 
-$sentencia_sql = "INSERT INTO `koonolpax`.`categoria` (`desc_cat`) VALUES ('$nombre_categoria')";
+$sentencia_sql = "INSERT INTO categoria (`desc_cat`) VALUES ('$nombre_categoria')";
 
 ejecutar_query($sentencia_sql);
 
