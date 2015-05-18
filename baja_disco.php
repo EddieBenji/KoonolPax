@@ -27,11 +27,11 @@ include "actions/buscar_discos_para_eliminar.php"
         <thead>
         <tr>
             <td>Disco</td>
-            <td>Intérprete</td>
+            <td>Precio</td>
+            <td>Interprete</td>
             <td>Categoría</td>
             <td>Sello</td>
-            <td>Precio</td>
-            <td>Dar de Baja</td>
+            <td>Modificar</td>
         </tr>
         </thead>
 

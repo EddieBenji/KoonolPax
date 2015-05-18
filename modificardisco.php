@@ -1,9 +1,58 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: romarinpc
- * Date: 5/15/15
- * Time: 7:12 PM
+ * User: lalo
+ * Date: 15/05/15
+ * Time: 03:26 PM
  */
-include 'disco/todos_los_discos.php'
+include "actions/buscar_discos_para_eliminar.php"
+
 ?>
+
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar Disco</title>
+</head>
+<body>
+
+<center>
+    <?php include "_menu.php" ?>
+
+
+
+    <table border="1">
+        <thead>
+        <tr>
+            <td>Disco</td>
+            <td>Precio</td>
+            <td>Interprete</td>
+            <td>Categoría</td>
+            <td>Sello</td>
+            <td>Modificar</td>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        <?php while ($disco = $results->fetch_assoc()) { ?>
+            <tr>
+                <td><?php echo $disco['nom_d'] ?></td>
+                <td><?php echo $disco['precio_d'] ?></td>
+                <td><?php echo $disco['desc_i'] ?></td>
+                <td><?php echo $disco['desc_cat'] ?></td>
+                <td><?php echo $disco['desc_s'] ?></td>
+                <td><a href="actualizardisco.php?id_disco=<?php echo $disco['cod_d'] ?>">Modificar</a>
+                </td>
+            </tr>
+        <?php } ?>
+
+
+        </tbody>
+    </table>
+</center>
+
+</body>
+</html>

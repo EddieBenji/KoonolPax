@@ -27,7 +27,7 @@
             <a href="modificardisco.php">Discos</a>
         </td>
         <td>
-            <a href="#">Usuarios mas activos</a>
+            <a href="ver_usuarios_activos.php">Usuarios mas activos</a>
         </td>
     </tr>
     <tr>
