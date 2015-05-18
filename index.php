@@ -43,8 +43,12 @@ session_start();
     <div id="menu">
         <ul id="menu_principal">
             <li><a href='login.php'>Ver Carrito</a></li>
-            <?php if(isset($_SESSION["admin"])  && $_SESSION["admin"] == 1) {?>
-            <li><a href="menu.php">Administrador</a></li>
+
+            <?php if(isset($_SESSION["admin"])) { ?>
+                <?php if($_SESSION["admin"] == 1) { ?>
+                    <li><a href="menu.php">Administrador</a></li>
+                <?php } ?>
+                <li><a href="actions/logout.php">LogOut</a></li>
             <?php } ?>
         </ul>
 
@@ -61,9 +65,9 @@ session_start();
 
             <p><a href="buscador.php?modo=n">Novedades</a></p>
 
-            <p><a href="buscador.php?modo=b">Los m�s vendidos</a></p>
+            <p><a href="buscador.php?modo=b">Los más vendidos</a></p>
 
-            <p><a href="buscador.php?modo=i">Los artistas m�s vendidos</a></p>
+            <p><a href="buscador.php?modo=i">Los artistas más vendidos</a></p>
 
             <p><a href="ver_usuarios_activos.php">Los usuarios más vendidos</a></p>
 
@@ -76,7 +80,7 @@ session_start();
         <div id="publicidad">
             <h2>Publicidad</h2>
 
-            <p>No olvide dejar de revisar la �ltimas ediciones de discos en nuestra p�gina.</p>
+            <p>No olvide dejar de revisar la ultimas ediciones de discos en nuestra página.</p>
 
             <p><a href="#">Seguir leyendo...</a></p>
         </div>
@@ -95,9 +99,9 @@ session_start();
 
                 <img src="imagenes/sara.jpg" alt="Imagen gen?rica"/>
 
-                <p>Sarah Brightman es una soprano, actriz y bailarina brit�nica que interpreta m�sica del g�nero
-                    denominado Classical Crossover. Ha cantado en ingl�s, espa�ol, franc�s, catal�n, lat�n, alem�n,
-                    italiano, japon�s, hindi, mandar�n, ruso y occitano.</p>
+                <p>Sarah Brightman es una soprano, actriz y bailarina británica que interpreta música del género
+                    denominado Classical Crossover. Ha cantado en inglés, español, francés, catalán, latín, alemán,
+                    italiano, japonés, hindi, mandarín, ruso y occitano.</p>
 
                 <p>Interprete: SARAH BRIGHTMAN</p>
 
@@ -112,10 +116,10 @@ session_start();
 
                 <img src="imagenes/alize.jpg" alt="Imagen gen?rica"/>
 
-                <p>Aliz�e Jacotey, conocida mundialmente como Aliz�e, es una cantante francesa nacida en Ajaccio,
-                    C�rcega. Su nombre se refiere a la forma femenina de los vientos alisios.</p>
+                <p>Alizze Jacotey, conocida mundialmente como Alizze, es una cantante francesa nacida en Ajaccio,
+                    Corcega. Su nombre se refiere a la forma femenina de los vientos alisios.</p>
 
-                <p>Actualmente se encuentra promocionando su quinto �lbum de estudio, titulado 5, que sali� a la venta
+                <p>Actualmente se encuentra promocionando su quinto álbum de estudio, titulado 5, que salió a la venta
                     el 25 de marzo de 2013. Del cual se desprende su primer sencillo llamado A cause de l'automne..</p>
 
                 <p></p>
