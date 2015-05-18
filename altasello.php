@@ -11,7 +11,7 @@
 </center>
 <br/>
 <center>
-<form action="actions/alta_sello.php" method="post">
+<form action="actions/sello/alta_sello.php" method="post">
     <label for="nombre_sello">Nombre del Sello</label>
     <input type="text" name="nombre_sello"/>
     <br/><br/>

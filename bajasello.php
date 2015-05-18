@@ -23,7 +23,7 @@ include 'actions/search_all_sellos.php'
 <br/>
 
 <center>
-    <form action="actions/baja_sello.php" method="post">
+    <form action="actions/sello/baja_sello.php" method="post">
         <table>
             <thead>
             <tr>

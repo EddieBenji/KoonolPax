@@ -23,7 +23,7 @@ include 'actions/find_sello.php';
 </center>
 <br/>
 <center>
-    <form action="actions/actualizar_sello.php" method="post">
+    <form action="actions/sello/actualizar_sello.php" method="post">
 
         <input type="hidden" name="id_sello" value="<?php echo $sello['cod_s']; ?>"/>
 

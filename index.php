@@ -48,7 +48,7 @@ session_start();
                 <?php if($_SESSION["admin"] == 1) { ?>
                     <li><a href="menu.php">Administrador</a></li>
                 <?php } ?>
-                <li><a href="actions/logout.php">LogOut</a></li>
+                <li><a href="actions/sesiones/logout.php">LogOut</a></li>
             <?php } ?>
         </ul>
 

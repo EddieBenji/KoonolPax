@@ -6,7 +6,7 @@
  * Time: 10:16 AM
  */
 
-include 'actions/find_categoria.php';
+include 'actions/categoria/find_categoria.php';
 
 ?>
 

@@ -24,7 +24,7 @@ if (isset($_SESSION["cod_u"])) {
 //Entonces ya hay una sesión iniciada.
     header("location: carrito.php");
 } else { ?>
-    <form action="actions/begin_session.php" method="post">
+    <form action="actions/sesiones/begin_session.php" method="post">
         <table>
             <tr>
                 <td><label for="name">Ingrese su nombre</label></td>
