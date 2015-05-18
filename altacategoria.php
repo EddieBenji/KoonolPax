@@ -28,7 +28,6 @@
     </form>
 </center>
 
-<a href="index.php">Ir a Inicio</a>
 
 </body>
 </html>

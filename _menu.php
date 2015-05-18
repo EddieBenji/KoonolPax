@@ -1,3 +1,6 @@
+<a href="index.php">Index</a>
+<br/><br/><br/>
+
 <table width="1200px;">
     <thead>
     <tr>
@@ -66,5 +69,3 @@
     </tbody>
 </table>
 
-
-<a href="index.php">Ir a index</a>

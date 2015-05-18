@@ -51,7 +51,5 @@ include 'actions/search_all_sellos.php'
     </form>
 </center>
 
-<a href="index.php">Ir a Inicio</a>
-
 </body>
 </html>

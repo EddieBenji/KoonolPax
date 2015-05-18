@@ -48,7 +48,6 @@ include 'actions/search_all_categorias.php'
 
 </center>
 
-<a href="index.php">Ir a Inicio</a>
 
 </body>
 </html>
