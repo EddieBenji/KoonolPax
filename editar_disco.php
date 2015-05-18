@@ -21,7 +21,7 @@
 </center>
 <br/>
 <center>
-    <form action="../actions/disco/editar-disco.php" method="post">
+    <form action="actions/disco/editar-disco.php" method="post">
         <label for="nombre">Nombre del Disco</label>
         <input type="text" name="nombre"/>
         <br/>

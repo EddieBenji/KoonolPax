@@ -5,7 +5,7 @@
  * Date: 15/05/15
  * Time: 03:26 PM
  */
-include "../actions/buscar_discos_para_eliminar.php"
+include "actions/buscar_discos_para_eliminar.php"
 
 ?>
 
@@ -19,7 +19,7 @@ include "../actions/buscar_discos_para_eliminar.php"
 <body>
 
 <center>
-    <?php include "../_menu.php" ?>
+    <?php include "_menu.php" ?>
 
 
 
@@ -44,7 +44,7 @@ include "../actions/buscar_discos_para_eliminar.php"
                 <td><?php echo $disco['desc_i'] ?></td>
                 <td><?php echo $disco['desc_cat'] ?></td>
                 <td><?php echo $disco['desc_s'] ?></td>
-                <td><a href="../actions/disco/eliminar_disco.php?id_disco=
+                <td><a href="actions/disco/eliminar_disco.php?id_disco=
                 <?php echo $disco['cod_d'] ?>">Dar de baja</a>
                 </td>
             </tr>

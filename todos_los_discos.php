@@ -40,8 +40,8 @@ include '../actions/buscar_discos_para_eliminar.php';
             <td><?php echo $disco['desc_cat'] ?></td>
             <td><?php echo $disco['desc_s'] ?></td>
             <td><?php echo $disco['precio_d'] ?></td>
-            <td><a href="../carrito.php?cod_d=<?php echo $resultado['cod_d'] ?>&cod_i=<?php echo $resultado['cod_i'] ?>">Comprar</a></td>
-            <td><a href="../actions/disco/eliminar_disco.php?id=<?php echo $resultado['cod_d'] ?>">Eliminar</a></td>
+            <td><a href="carrito.php?cod_d=<?php echo $disco['cod_d'] ?>&cod_i=<?php echo $disco['cod_i'] ?>">Comprar</a></td>
+            <td><a href="actions/disco/eliminar_disco.php?id=<?php echo $disco['cod_d'] ?>">Eliminar</a></td>
         </tr>
     <?php } ?>
     </tbody>

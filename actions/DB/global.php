@@ -10,7 +10,7 @@
 define('SERVER', 'localhost');
 define('USER', 'root');
 define('PASSWORD', 'root');
-define('DB_NAME', 'KonoolPax');
+define('DB_NAME', 'koonolpax');
 
 function ejecutar_query($query)
 {
