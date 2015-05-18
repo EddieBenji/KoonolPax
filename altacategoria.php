@@ -20,7 +20,7 @@
 </center>
 <br/>
 <center>
-    <form action="actions/alta_categoria.php" method="post">
+    <form action="actions/categoria/alta_categoria.php" method="post">
         <label for="nombre_categoria">Nombre de la Categoría</label>
         <input type="text" name="nombre_categoria"/>
         <br/><br/>

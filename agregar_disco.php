@@ -22,7 +22,7 @@ include 'actions/search_all.php';
 </center>
 <br/>
 <center>
-    <form action="actions/disco/alta-disco.php" method="post">
+    <form action="actions/disco/alta_disco.php" method="post">
         <label for="nombre">Nombre del Disco</label>
         <input type="text" name="nombre"/>
         <br/>

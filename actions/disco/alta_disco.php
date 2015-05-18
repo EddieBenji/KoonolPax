@@ -19,5 +19,4 @@ if (isset($_SESSION['admin'])) {
     $query = "INSERT INTO disco(nom_d, cod_i, cant_d, cod_s, precio_d, fec_d, cod_cat) VALUES('$nombre', $cod_i, $cant, $cod_s, $precio, '$fecha', $categoria)";
     ejecutar_query($query);
 
-}
-header('location: ../../index.php');
+}header('location: ../../index.php');

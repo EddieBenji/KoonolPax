@@ -23,7 +23,7 @@ include 'actions/search_all_categorias.php'
 <br/>
 
 <center>
-    <form action="actions/baja_categoria.php" method="post">
+    <form action="actions/categoria/baja_categoria.php" method="post">
         <table>
             <thead>
             <tr>

@@ -20,7 +20,7 @@
 </center>
 <br/>
 <center>
-    <form action="actions/alta_interprete.php" method="post">
+    <form action="actions/interprete/alta_interprete.php" method="post">
         <label for="nombre_interprete">Nombre del Intérprete</label>
         <input type="text" name="nombre_interprete"/>
         <br/><br/>

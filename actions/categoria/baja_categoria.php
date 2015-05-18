@@ -6,7 +6,7 @@
  * Time: 09:56 AM
  */
 
-include 'DB/global.php';
+include '../DB/global.php';
 
 $delete_query = "DELETE FROM categoria WHERE cod_cat =";
 
@@ -17,5 +17,4 @@ if(!empty($_POST['options'])) {
         ejecutar_query($delete_query.$selected);
     }
 }
-
-header('location: ../index.php');
+header('location: ../../index.php');

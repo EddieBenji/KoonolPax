@@ -17,7 +17,7 @@ include 'actions/search_all_interpretes.php'
     <br/>
 
     <center>
-        <form action="actions/baja_interprete.php" method="post">
+        <form action="actions/interprete/baja_interprete.php" method="post">
             <table>
                 <thead>
                     <tr>

@@ -23,7 +23,7 @@ include 'actions/find_categoria.php';
 </center>
 <br/>
 <center>
-    <form action="actions/actualizar_categoria.php" method="post">
+    <form action="actions/categoria/actualizar_categoria.php" method="post">
 
         <input type="hidden" name="id_categoria" value="<?php echo $categoria['cod_cat']; ?>"/>
 

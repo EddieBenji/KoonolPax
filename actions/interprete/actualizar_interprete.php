@@ -7,7 +7,7 @@
  */
 
 //incluye el dao con la información de la BD:
-include 'DB/global.php';
+include '../DB/global.php';
 
 $id_interprete = $_POST["id_interprete"];
 $nombre_interprete = $_POST["nombre_interprete"];
@@ -15,5 +15,4 @@ $nombre_interprete = $_POST["nombre_interprete"];
 $sentencia_sql = "UPDATE interprete SET desc_i = '$nombre_interprete' WHERE cod_i = $id_interprete";
 
 ejecutar_query($sentencia_sql);
-
-header('location: ../index.php');
+header('location: ../../index.php');

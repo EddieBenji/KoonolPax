@@ -18,5 +18,5 @@ if (isset($_SESSION['admin'])) {
     ejecutar_query($query);
 
 }
-//header('location: ../../verdiscos.php');
+
 header('location: ../../index.php');

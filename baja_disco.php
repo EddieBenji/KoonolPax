@@ -44,7 +44,7 @@ include "actions/buscar_discos_para_eliminar.php"
                 <td><?php echo $disco['desc_i'] ?></td>
                 <td><?php echo $disco['desc_cat'] ?></td>
                 <td><?php echo $disco['desc_s'] ?></td>
-                <td><a href="actions/disco/eliminar_disco.php?id_disco=
+                <td><a href="actions/disco/baja_disco.php?id_disco=
                 <?php echo $disco['cod_d'] ?>">Dar de baja</a>
                 </td>
             </tr>

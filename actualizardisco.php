@@ -24,7 +24,7 @@ include 'actions/find_disco.php';
 </center>
 <br/>
 <center>
-    <form action="actions/disco/editar-disco.php" method="post">
+    <form action="actions/disco/actualizar_disco.php" method="post">
 
         <input type="hidden" name="id_disco" value="<?php echo $disco['cod_d']; ?>"/>
 

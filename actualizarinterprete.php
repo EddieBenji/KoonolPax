@@ -23,7 +23,7 @@ include 'actions/find_interprete.php';
 </center>
 <br/>
 <center>
-    <form action="actions/actualizar_interprete.php" method="post">
+    <form action="actions/interprete/actualizar_interprete.php" method="post">
 
         <input type="hidden" name="id_interprete" value="<?php echo $artista['cod_i']; ?>"/>
 
