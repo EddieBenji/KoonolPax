@@ -21,7 +21,7 @@
             <a href="agregar_disco.php">Discos</a>
         </td>
         <td>
-            <a href="disco/baja_disco.php">Discos</a>
+            <a href="baja_disco.php">Discos</a>
         </td>
         <td>
             <a href="modificardisco.php">Discos</a>
