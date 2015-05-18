@@ -21,8 +21,7 @@ include "actions/buscar_discos_para_eliminar.php"
 <center>
     <?php include "_menu.php" ?>
 
-
-
+    <form action="actions/disco/baja_disco.php" method="post">
     <table border="1">
         <thead>
         <tr>
@@ -31,28 +30,29 @@ include "actions/buscar_discos_para_eliminar.php"
             <td>Interprete</td>
             <td>Categoría</td>
             <td>Sello</td>
-            <td>Modificar</td>
+            <td>Dar de baja</td>
         </tr>
         </thead>
 
 
         <tbody>
-        <?php while ($disco = $results->fetch_assoc()) { ?>
-            <tr>
-                <td><?php echo $disco['nom_d'] ?></td>
-                <td><?php echo $disco['precio_d'] ?></td>
-                <td><?php echo $disco['desc_i'] ?></td>
-                <td><?php echo $disco['desc_cat'] ?></td>
-                <td><?php echo $disco['desc_s'] ?></td>
-                <td><a href="actions/disco/baja_disco.php?id_disco=
-                <?php echo $disco['cod_d'] ?>">Dar de baja</a>
-                </td>
-            </tr>
-        <?php } ?>
-
+            <?php while ($disco = $results->fetch_assoc()) { ?>
+                <tr>
+                    <td><?php echo $disco['nom_d'] ?></td>
+                    <td><?php echo $disco['precio_d'] ?></td>
+                    <td><?php echo $disco['desc_i'] ?></td>
+                    <td><?php echo $disco['desc_cat'] ?></td>
+                    <td><?php echo $disco['desc_s'] ?></td>
+                    <td><input name="options[]" type="checkbox" value="<?php echo $disco['cod_d'] ?>"</td>
+                </tr>
+            <?php } ?>
 
         </tbody>
     </table>
+        <br/>
+        <input type="submit" value="Dar baja"/>
+    </form>
+
 </center>
 
 </body>

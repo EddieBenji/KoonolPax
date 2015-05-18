@@ -44,7 +44,7 @@ include "actions/buscar_discos_para_eliminar.php"
                 <td><?php echo $disco['desc_i'] ?></td>
                 <td><?php echo $disco['desc_cat'] ?></td>
                 <td><?php echo $disco['desc_s'] ?></td>
-                <td><a href="actualizardisco.php?id_disco=<?php echo $disco['cod_d'] ?>">Modificar</a>
+                <td><a href="actualizardisco.php?id_disco=<?php echo $disco['cod_d'] ?>">ver detalle</a>
                 </td>
             </tr>
         <?php } ?>

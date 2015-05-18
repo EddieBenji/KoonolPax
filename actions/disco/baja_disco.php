@@ -2,20 +2,15 @@
 include '../DB/global.php';
 
 
-session_start();
+$delete_query = "DELETE FROM disco WHERE cod_d =";
 
+if (!empty($_POST['options'])) {
+    $options = $_POST['options'];
 
-if (isset($_SESSION['admin'])) {
+    foreach ($options as $selected) {
+        ejecutar_query($delete_query . $selected);
 
-    $id_disco = $_GET['id_disco'];
-
-
-    $query = "DELETE FROM disco WHERE (cod_d=$id_disco)";
-
-
-
-
-    ejecutar_query($query);
+    }
 
 }
 
