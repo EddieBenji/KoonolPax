@@ -10,6 +10,6 @@ include 'DB/global.php';
 
 
 
-$sql = "SELECT monthname(fec_p), count(*) as no_pedidos FROM pedido_m GROUP BY monthname(fec_p)";
+$sql = "SELECT monthname(fec_p),year(fec_p), count(*) as no_pedidos FROM pedido_m GROUP BY monthname(fec_p)";
 
 $ventas_del_mes = ejecutar_query($sql);
