@@ -7,7 +7,6 @@
         <td>Alta</td>
         <td>Baja</td>
         <td>Modificar</td>
-        <td>Ventas del Mes</td>
     </tr>
     </thead>
     <tbody>
@@ -21,6 +20,7 @@
         <td><a href="altainterprete.php">Intérprete</a></td>
         <td><a href="bajainterprete.php">Intérprete</a></td>
         <td><a href="modificarinterprete.php">Intérprete</a></td>
+        <td><a href="ventas_del_mes.php">Ventas del mes</a></td>
     </tr>
     <tr>
         <td><a href="altacategoria.php">Categorías</a></td>

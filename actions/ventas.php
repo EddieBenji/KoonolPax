@@ -6,7 +6,7 @@
  * Time: 02:57 PM
  */
 
-include '../DB/global.php';
+include 'DB/global.php';
 
 
 
