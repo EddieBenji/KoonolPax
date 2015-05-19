@@ -22,7 +22,7 @@
             <?php foreach($ventas_del_mes as $ventas): ?>
                 <tr>
                     <td><?php echo $ventas['monthname(fec_p)']?></td>
-                    <td><?php echo '2015'?></td>
+                    <td><?php echo $ventas['year(fec_p)']?></td>
                     <td><?php echo $ventas['no_pedidos']?> </td>
                 </tr>
             <?php endforeach ?>
