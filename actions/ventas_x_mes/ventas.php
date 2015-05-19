@@ -10,6 +10,6 @@ include '../DB/global.php';
 
 
 
-$sql = "SELECT *, count(*) AS pedidos_realizados FROM pedido_m GROUP BY pedido_m.fec_p ORDER BY pedidos_realizados DESC LIMIT 5";
+$sql = "SELECT monthname(fec_p), count(*) as no_pedidos FROM pedido_m GROUP BY monthname(fec_p)";
 
 $ventas_del_mes = ejecutar_query($sql);
