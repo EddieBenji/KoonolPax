@@ -24,7 +24,7 @@ include 'actions/search_all.php';
 <center>
     <form action="actions/disco/alta_disco.php" method="post">
         <label for="nombre">Nombre del Disco</label>
-        <input type="text" name="nombre"/>
+        <input type="text" name="nombre" id = "nombre"/>
         <br/>
 
         <label for="interprete">Interprete</label>
@@ -36,7 +36,7 @@ include 'actions/search_all.php';
         <br/>
 
         <label for="cantidad">Cantidad</label>
-        <input type="number" name="cantidad" min="0"/>
+        <input type="number" name="cantidad" min="0" id ="cantidad"/>
         <br/>
 
         <label for="sello">Sello</label>
@@ -48,11 +48,11 @@ include 'actions/search_all.php';
         <br/>
 
         <label for="precio">Precio</label>
-        <input type="number" name="precio" min="0"/>
+        <input type="number" name="precio" min="0" id = "precio"/>
         <br/>
 
         <label for="fecha">Fecha</label>
-        <input type="date" name="fecha"/>
+        <input type="date" name="fecha" id = "fecha"/>
         <br/>
 
         <label for="categoria">Categoría</label>
