@@ -9,13 +9,11 @@
 
 //incluye el dao con la información de la BD:
 include 'DB/global.php';
-if (isset($_GET["key_word"])) {
-    $key_word = $_GET["key_word"];
-    $cd_name = $_GET["cd_name"];
-    $artist = $_GET["artist"];
-    $category = $_GET["category"];
-}
 
+$key_word = $_GET["key_word"];
+$cd_name = $_GET["cd_name"];
+$artist = $_GET["artist"];
+$category = $_GET["category"];
 
 if ($cd_name == 0 && $artist == 0 && $category == 0) {
     $sentencia_sql = "SELECT DISTINCT disco.*, interprete.*, categoria.*, sello.desc_s, disco.precio_d
