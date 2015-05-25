@@ -6,8 +6,13 @@
  * Time: 10:16 AM
  */
 
-include 'actions/categoria/find_categoria.php';
 
+include 'actions/DB/global.php';
+
+$id = $_GET['id'];
+$find_query = "SELECT * FROM categoria WHERE cod_cat= $id";
+
+$categoria = ejecutar_query($find_query)->fetch_array();
 ?>
 
 <!DOCTYPE html>
